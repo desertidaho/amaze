@@ -1,8 +1,8 @@
 function Maze(args) {
 	const defaults = {
-		width: 20,
-		height: 20,
-		wallSize: 10,
+		width: 25,
+		height: 25,
+		wallSize: 7,
 		entryType: '',
 		bias: '',
 		color: '#000000',
