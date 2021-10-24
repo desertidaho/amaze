@@ -1,13 +1,13 @@
 function Maze(args) {
 	const defaults = {
-		width: 25,
-		height: 25,
+		width: 30,
+		height: 30,
 		wallSize: 7,
 		entryType: '',
 		bias: '',
 		color: '#000000',
-		backgroundColor: '#FFFFFF',
-		solveColor: '#cc3737',
+		backgroundColor: '#f2f2f2',
+		solveColor: '#00b33c',
 		removeWalls: 0,
 
 		// Maximum 300 walls can be removed

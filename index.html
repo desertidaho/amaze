@@ -94,7 +94,7 @@
 				padding:5px 1em;
 				margin-right: .5em;
 				font-size: .9em;
-				background:#3377ff;
+				background:#00b33c;
 				color: #fff;
 				border:0 none;
 				cursor:pointer;
@@ -102,33 +102,34 @@
 				border-radius: 5px;
 			}
 			button:hover {
-				background:#0055ff;
+				background:#000000;
 			}
 		</style>
+		<link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
 	</head>
 	<body>
-		<h1>Maze Generator</h1>
+		<h1>Amaze.me Maze Generator</h1>
 		<p>
 			Create, solve and download random maze puzzles in any size or color with this online tool. Enter the values for your maze design below and click the "Generate Maze" button.</p>
 		<p>
 			The <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker">recursive backtracking algorithm</a> is used to create the mazes.
-			For more information check out the <a href="https://github.com/keesiemeijer/maze-generator">Github Repository</a>.
+			For more information check out the <a href="https://github.com/desertidaho/amaze" target="blank">Github Repository</a>.
 		</p>
 		<hr>
 		<div class="controls">
 			<p>
 				<label for="wall-size">Wall thickness:</label>
-				<input id="wall-size" type="number" name="" value="10" min="1">
+				<input id="wall-size" type="number" name="" value="7" min="1">
 			</p>
 
 			<p>
 				<label for="width">Columns:</label>
-				<input id="width" type="number" name="width" value="20" min="3" max="200">
+				<input id="width" type="number" name="width" value="30" min="3" max="200">
 			</p>
 
 			<p>
 				<label for="height">Rows:</label>
-				<input id="height" type="number" name="height" value="20" min="3" max="200">
+				<input id="height" type="number" name="height" value="30" min="3" max="200">
 			</p>
 			<p>
 				<label for="entry">Maze entries:</label>
@@ -158,17 +159,17 @@
 			<p class='desc'>
 				Click the colors below to select a color from a color pallete.
 			</p>
-			<div class="color-picker" data-default="#ffffff">
+			<div class="color-picker" data-default="#f2f2f2">
 				<label for="backgroundColor">Background Color</label> 
-				<input type="text" class="" id="backgroundColor" name="backgroundColor" value="#ffffff"><div class="color-sample" style="background-color:#ffffff"></div>
+				<input type="text" class="" id="backgroundColor" name="backgroundColor" value="#f2f2f2"><div class="color-sample" style="background-color:#ffffff"></div>
 			</div>
 			<div class="color-picker" data-default="#000000">
 				<label for="color">Maze Color</label> 
 				<input type="text" class="" id="color" name="color" value="#000000"><div class="color-sample" style="background-color:#000000"></div>
 			</div>
-			<div class="color-picker" data-default="#cc3737">
+			<div class="color-picker" data-default="#00b33c">
 				<label for="solveColor">Solve Color</label> 
-				<input type="text" class="" id="solveColor" name="solveColor" value="#cc3737" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"><div class="color-sample" style="background-color:#cc3737"></div>
+				<input type="text" class="" id="solveColor" name="solveColor" value="#00b33c" pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"><div class="color-sample" style="background-color:#cc3737"></div>
 			</div>
 			<div id="generate">
 				<button id="create-maze" onclick="initMaze();" class='hide'>Generate Maze</button>

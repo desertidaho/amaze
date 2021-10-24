@@ -42,9 +42,9 @@ function initMaze() {
     download.innerHTML = 'download maze';
 
     const settings = {
-        width: getInputIntVal('width', 20),
-        height: getInputIntVal('height', 20),
-        wallSize: getInputIntVal('wall-size', 10),
+        width: getInputIntVal('width', 30),
+        height: getInputIntVal('height', 30),
+        wallSize: getInputIntVal('wall-size', 7),
         removeWalls: getInputIntVal('remove_walls', 0),
         entryType: '',
         bias: '',
